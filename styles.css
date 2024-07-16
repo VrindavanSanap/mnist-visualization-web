@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Monaco, monospace;
+  background-color: black;
+  color: white;
+}
+h1{
+    font-weight: 600px;
+    font-size: 45px;
+}
+.landing {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mnist_container {
+  margin-top: 30px;
+}
+table {
+  border-collapse: collapse;
+  /* width: 100%; */
+}
+td {
+  width: 15px;
+  height: 15px;
+  border: 0.1px solid #414141;
+}
+.mnist_id_input {
+  width: 150px;
+  border: white;
+  border-color :white;
+  border: 1px solid #ccc;
+}
+input {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 200px;
+}
+
+input:focus {
+  border-color: #66afe9;
+  outline: none;
+  box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+}
+.button:hover{
+    border-color: #66afe9;
+  outline: none;
+  box-shadow: 0 0 8px rgba(102, 175, 233, 0.6); 
+}

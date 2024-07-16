@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MNIST Digit Grid</title>
+
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="landing">
+        <h1>MNIST Visualiser</h1>
+        <div class="mnist_container" id = "mnist_container">
+
+            <table id="mnist_grid"></table>
+            <div id="label"></div>
+        </div>
+        <div>
+            <div>
+
+
+                <label for="data_type">Choose dataset:</label>
+                <select id="data_type" name="data_type">
+                    <option value="train">Train (60K images)</option>
+                    <option value="test">Test (10K images)</option>
+                </select>
+
+
+                <br>
+
+
+                <input type="number" value="0" id="mnist_id" class="mnist_id_input" name="quantity" min="1" max="max"
+                    step="1">
+                <input class="button" type="button" value="Get Data" onclick=get_data(index)>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
