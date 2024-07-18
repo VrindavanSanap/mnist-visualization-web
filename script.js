@@ -15,7 +15,7 @@ async function get_data(index) {
     index = input_.value;
 
     var data_type = document.getElementById('data_type').value;
-    let url = `https://13.127.228.42:8088/mnist/${data_type}/${index}`
+    let url = `https://65.2.149.160:8088/mnist/${data_type}/${index}`
     const data = await fetch(url);
     const data_json = await data.json();
     const mnist_data = data_json.data;
